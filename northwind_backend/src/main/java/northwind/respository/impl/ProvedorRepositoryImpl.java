@@ -59,6 +59,7 @@ public class ProvedorRepositoryImpl implements ProvedorRepository {
                 provedorList.add(provedor);
             }
         } catch (SQLException e) {
+            e.printStackTrace();
             throw new Exception(e);
         } finally {
             try {
@@ -99,6 +100,7 @@ public class ProvedorRepositoryImpl implements ProvedorRepository {
                 //agrego objeto a resultado
             }
         } catch (SQLException e) {
+            e.printStackTrace();
             throw new Exception(e);
         } finally {
             try {
@@ -126,6 +128,7 @@ public class ProvedorRepositoryImpl implements ProvedorRepository {
             provedor.setIdProvedor(ps.executeUpdate());
             connection.createStatement();
         } catch (SQLException e) {
+            e.printStackTrace();
             throw new Exception(e);
         } finally {
             try {
@@ -153,6 +156,7 @@ public class ProvedorRepositoryImpl implements ProvedorRepository {
             ps.executeUpdate();
             connection.createStatement();
         } catch (SQLException e) {
+            e.printStackTrace();
             throw new Exception(e);
         } finally {
             try {
@@ -175,6 +179,7 @@ public class ProvedorRepositoryImpl implements ProvedorRepository {
             ps.executeUpdate();
             ok = true;
         } catch (SQLException e) {
+            e.printStackTrace();
             throw new Exception(e);
         } finally {
             try {
