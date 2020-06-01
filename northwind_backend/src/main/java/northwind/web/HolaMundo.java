@@ -4,7 +4,7 @@ import northwind.model.Mensaje;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-public class HolaMundo {
+public class  HolaMundo {
     /**
      * Peticion GET para obtener un hola mundo
      * @return
